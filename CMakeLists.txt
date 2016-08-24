@@ -1,0 +1,13 @@
+include_directories(
+	.\\
+)
+
+ADD_EXECUTABLE(test main.cpp)
+
+TARGET_LINK_LIBRARIES(
+    test
+	"${CMAKE_CURRENT_SOURCE_DIR}\\GL\\GLUT32.LIB"
+	"${CMAKE_CURRENT_SOURCE_DIR}\\GL\\opengl32.LIB"
+	"${CMAKE_CURRENT_SOURCE_DIR}\\GL\\glu32.LIB"
+	"${CMAKE_CURRENT_SOURCE_DIR}\\GL\\glew32.LIB"
+)
